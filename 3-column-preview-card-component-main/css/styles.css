@@ -1,0 +1,160 @@
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+
+    --ff-lexend: 'Lexend Deca', sans-serif;
+    --ff-bsd: 'Big Shoulders Display', cursive;
+} 
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--gray);
+    font-size: 1.6rem;
+    margin: auto;
+
+}
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    position: relative;
+    padding: 20rem 0;
+}
+h1 {
+    font-family: var(--ff-bsd);
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--gray);
+}
+p {
+    font-family: var(--ff-lexend);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+}
+a {
+    font-family: var(--ff-lexend);
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+}
+.button__container {
+    margin: auto;
+}
+.button {
+    background-color: var(--gray);
+    padding: 1.8rem 4rem;
+    border-radius: 4rem;
+}
+.button:hover {
+    background-color: transparent;
+    border: 3px solid var(--gray);
+}
+ /** Sedans **/
+.sedans {
+     background-color: var(--orange);
+     padding: 6rem 6rem;
+     border-radius: 1rem 1rem 0 0;
+     min-width: 37.5rem;
+
+}
+.sedans .button {
+     color: var(--orange);
+}
+.sedans .button:hover {
+     color: var(--white);
+}
+ .sedans__icon {
+     width: 100%;
+}
+.sedans__text {
+     margin-bottom: 5rem;
+}
+
+ /** SUVs **/
+ .suvs {
+    background-color: var(--cyan);
+    padding: 6rem 6rem;
+    min-width: 37.5rem;
+}
+.suvs .button {
+    color: var(--cyan);
+}
+.suvs .button:hover {
+    color: var(--white);
+}
+.suvs__icon {
+    width: 100%;
+}
+.suvs__text {
+    margin-bottom: 5rem;
+}
+
+/** Luxury **/
+.luxury {
+    background-color: var(--dark);
+    padding: 6rem 6rem;
+    border-radius: 0 0 1rem 1rem;
+    min-width: 37.5rem;
+}
+.luxury .button {
+    color: var(--dark);
+}
+.luxury .button:hover {
+    color: var(--white);
+}
+.luxury__icon {
+    width: 100%;
+}
+.luxury__text {
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 980px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sedans {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .luxury {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .text {
+        margin-bottom: 10rem;
+    }
+
+    .title {
+        margin-bottom: 5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+.attribution {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 2rem;
+}
+.attribution a {
+    color: var(--cyan);
+}
+
+.link-pablo:hover {
+    color: var(--dark);
+}
