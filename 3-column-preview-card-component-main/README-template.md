@@ -23,11 +23,6 @@ Users should be able to:
 ![](./screenshot.png)
 
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -38,6 +33,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@PaliTriesToDesign](https://www.frontendmentor.io/profile/PaliTriesToDesign)
 
