@@ -1,0 +1,143 @@
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    --ff-barlow:'Barlow Semi Condensed', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff-barlow);
+}
+body {
+    background-color: var(--light-grayish-blue);
+    width: auto;
+    height: auto;
+}
+h1 {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+h2 {
+    color: var(--white);
+    font-size: 1rem;
+}
+p {
+    color: var(--white);
+    opacity: 0.5;
+}
+.container {
+    margin: 2rem;
+}
+
+/** User Card **/
+.user-card {
+    /* background-color: var(--very-dark-grayish-blue); */
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0px 10px 40px hsl(219, 29%, 14%, 0.3);
+}
+
+.user-card.background {
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+}
+
+.user-card__person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.user-card__person-info {
+    padding-left: 1rem;
+}
+
+.user-card__img {
+    border-radius: 50%;
+    border: 2px solid var(--light-grayish-blue);
+    width: 2.5rem;
+}
+
+.user-card__title {
+    margin-bottom: 1rem;
+}
+
+
+/**Daniel**/
+.user-card:nth-child(1) {
+    background-color: var(--moderate-violet);
+}
+
+/* Jonathan */
+.user-card:nth-child(2) {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+/* Jeanette and Kira */
+.user-card:nth-child(3), .user-card:nth-child(5) {
+ background-color: var(--white);
+}
+
+.user-card:nth-child(3) p, .user-card:nth-child(5) p {
+    color: var(--very-dark-grayish-blue);
+}
+
+.user-card:nth-child(3) h1, .user-card:nth-child(5) h1 {
+    color: var(--very-dark-grayish-blue);
+}
+   
+
+.user-card:nth-child(3) h2, .user-card:nth-child(5) h2 {
+    color: var(--very-dark-grayish-blue);
+}
+
+
+/* Patric */
+.user-card:nth-child(4) {
+ background-color: var(--very-dark-blackish-blue);
+}
+
+@media (min-width: 980px) {
+
+    body {
+        padding: 8rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        margin: 10rem 10rem 0 10rem;
+    }   
+
+    .user-card {
+        box-shadow: 10px 10px 40px hsl(219, 29%, 14%, 0.3);
+    }
+
+    .user-card:nth-child(1) {
+        grid-column: 1 / 3;
+    }
+
+    .user-card:nth-child(4) {
+        grid-column: 2 / 4;
+    }
+
+    .user-card:nth-child(5) {
+        grid-column: 4 / 5 ;
+        grid-row: 1 / 3;
+    }
+
+.attribution {
+    display: block;
+    text-align: center;
+}
+
