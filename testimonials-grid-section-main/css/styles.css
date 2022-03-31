@@ -107,11 +107,6 @@ p {
 }
 
 @media (min-width: 980px) {
-
-    body {
-        padding: 8rem;
-    }
-
     .container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
