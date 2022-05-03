@@ -1,0 +1,36 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--dark-blue-main);
+
+  .logo-nav {
+    width: 5rem;
+  }
+
+  .ul-main {
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+// DESKTOP VERSION
+
+@media (min-width: 980px) {
+  .nav-bar {
+    padding: 4rem 4rem 2rem 4rem;
+
+    .logo-nav {
+      width: 10rem;
+    }
+
+    .ul-main {
+      font-size: 1rem;
+    }
+  }
+} ;

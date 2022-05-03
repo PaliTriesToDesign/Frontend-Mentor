@@ -1,0 +1,50 @@
+.container {
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+
+  .image-intro {
+    width: 90%;
+  }
+}
+
+.main-section {
+  background-color: var(--dark-blue-main);
+  background-image: url(/images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 12rem;
+}
+
+//  DESKTOP VERSION
+
+@media (min-width: 980px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section {
+    background-image: url(/images/bg-curvy-desktop.svg);
+    background-size: 100% 25rem;
+    height: 90vh;
+
+    .image-intro {
+      margin-bottom: 2rem;
+      width: 20rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      width: 50%;
+    }
+
+    p {
+      width: 35%;
+    }
+
+    button {
+      width: 15rem;
+    }
+  }
+}
