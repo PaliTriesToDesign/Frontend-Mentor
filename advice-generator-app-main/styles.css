@@ -1,0 +1,129 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  --ff-manrope: "Manrope", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: var(--ff-manrope);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--light-cyan);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  color: var(--neon-green);
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background-color: var(--dark-grayish-blue);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.advice-number {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  background-image: url(/images/pattern-divider-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.dice-circle {
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.dice-circle:hover {
+  box-shadow: 0 2px 20px hsl(150, 54%, 48%);
+}
+
+.dice {
+  width: 1.6rem;
+  height: 1.6rem;
+  transition: all 200ms ease-in-out;
+}
+
+.dice:hover {
+  transform: rotateZ(180deg);
+}
+
+.attribution {
+  text-align: center;
+  color: var(--grayish-blue);
+  margin: 2rem;
+}
+
+a {
+  color: var(--neon-green);
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/* DESKTOP */
+@media (min-width: 720px) {
+  .card {
+    margin: 0 auto;
+    max-width: 30rem;
+    margin-bottom: 5rem;
+  }
+
+  .divider {
+    background-image: url(/images/pattern-divider-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
